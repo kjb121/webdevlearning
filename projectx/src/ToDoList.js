@@ -3,12 +3,16 @@ import App from "./App";
 
 
 const toDoLists = (props) => {
+
+    const deleteItem = () => {
+        console.log("Deleted");
+    };
     
 
     return (
         <>
             <div className="todoStyle">
-                <i id="closeIcon" class="fa fa-times" aria-hidden="true"  />
+                <i id="closeIcon" class="fa fa-times" aria-hidden="true" onClick= {deleteItem}  />
                 <li>{props.text}</li>     
             </div>
 
